@@ -1,0 +1,301 @@
+\documentclass[a4paper,table]{twentysecondcv} % a4paper for A4
+
+\usepackage[none]{hyphenat}
+\usepackage{kotex}
+\usepackage{enumitem}
+\usepackage{makecell}
+\usepackage{geometry}
+
+\cvname{Julien DOCHE} % Your name
+\cvjobtitle{Software engineer starting September 2019} % Job title/career
+\cvdate{20 December 1996} % Date of birth
+\cvnumberphone{+336 18 25 61 40} % Phone number
+\cvsite{linkedin.com/in/juliendoche} % Personal website
+\cvmail{julien.doche@live.fr} % Personal email
+\cvextra{
+  \begin{itemize}[leftmargin=1mm]
+    \setlength\itemsep{-5pt}
+    \item Driving licence
+    \item PSCI1 French first aid certificate
+  \end{itemize}
+}
+
+\begin{document}
+
+\SidebarSections{
+
+  \vspace{-8pt}
+  \profilesection{Notes}
+
+    \item \dotfill
+    \item \dotfill
+    \item \dotfill
+    \item \dotfill
+
+  \profilesection{Education}
+
+  \begin{flushleft}
+
+    \vspace{-8pt}
+    \makebox[2cm][c]{
+      \begin{tabular}{m{1cm} m{1cm}}
+      \makecell{\includegraphics[scale=0.008]{logo-epita-hd.png}} & \makecell[ml]{\textbf{EPITA}, (École Pour l'Informatique \\ et les Techniques Avancées).} \\
+      \end{tabular}
+    }
+
+    \vspace{-20pt}
+    \makebox[2cm][c]{
+      \begin{tabular}{m{1cm} m{1cm}}
+      \makecell{\includegraphics[scale=0.7]{logo-sejong.png}} & \makecell[ml]{\textbf{Sejong University (세종대학교)}, \\ Semester in South Korea.} \\
+      \end{tabular}
+    }
+
+    \vspace{-4mm}
+
+    \textbf{High school diploma in sciences (Baccalauréat Scientifique)}, Lycée
+    Alain, Le Vésinet \\
+  \end{flushleft}
+
+  \profilesection{Skills}
+
+\renewcommand{\arraystretch}{1}
+  \makebox[\textwidth][c]{
+    \begin{tabular}{c|c}
+    \hline
+      Prog languages & Sys admin \\
+    \hline
+      C++ & Ansible, Kubernetes \\
+     Python & Docker, Jenkins, \\
+      C &  RabbitMQ, Salt, Gitlab, \\
+      x86-64 ASM & Keycloak, Nftables, \\
+      & DNS, DHCP, iPXE \\
+    \hline
+    \end{tabular}
+  }
+
+  \profilesection{Languages}
+
+  \begin{itemize}[leftmargin=1mm]
+    \setlength\itemsep{-5pt}
+    \item French: Native
+    \item English: TOEIC EPITA: 945
+      \vspace{-5pt}
+    \begin{itemize}
+      \setlength\itemsep{-5pt}
+      \item 1 month in an American host family
+      \item 5 months in Korea
+      \item 6 months in Ireland
+    \end{itemize}
+  \end{itemize}
+  \profilesection{Hobbies}
+  \begin{flushleft}
+  \begin{itemize}[leftmargin=1mm]
+    \setlength\itemsep{-5pt}
+    \item Electronics
+    \vspace{-5pt}
+    \begin{itemize}
+      \setlength\itemsep{-5pt}
+      \item Member of the robotic club Evolutek<<
+      \vspace{-5pt}
+      \begin{itemize}
+        \setlength\itemsep{-5pt}
+        \item \textbf{French robotic cup}
+      \end{itemize}
+      \item 3D Printing
+      \item Arduino/Electronics
+    \end{itemize}
+    \item Sports
+    \vspace{-5pt}
+    \begin{itemize}
+      \setlength\itemsep{-5pt}
+      \item Tennis
+      \item Bouldering
+    \end{itemize}
+    \item Travels
+    \vspace{-5pt}
+    \begin{itemize}
+      \setlength\itemsep{-5pt}
+      \item USA (Total of 3 months)
+      \item Korea (5 months), China
+      \item Great-Britain, Spain, Italy
+      \item Germany, Japan
+    \end{itemize}
+  \end{itemize}
+  \end{flushleft}
+}
+
+\makeprofile{} % Print the sidebar
+
+% JOB TITLE
+
+\begin{center}
+\round{{\LARGE\color{black!80}\textbf{\cvjobtitle}}}{gray!15}
+\end{center}
+
+\section{Work Experience}
+
+\begin{twenty}
+
+\twentyitem{2019\\ 6 m}{Software Engineer End-of-studies Intern}{ARISTA,
+Dublin}{Worked on \textbf{Strata BROADCOM Switching ASICs}.  Designed and
+implemented the refactoring of CLI command handlers.  Developed new features
+like ability to add ingress interface and the system MAC Addr to the
+\textbf{ECMP} and \textbf{Lag} Hashes. \textbf{Use of C++, Python}}
+
+\twentyitem{2018\\ 1 y}{ACU/YAKA Teaching assistant}{EPITA, Paris}
+{\textbf{Taught C, SHELL, C++, JAVA and SQL to 400+ students}, Pedagogy and
+leadership, Administration of the services used by the teaching team such as
+\textbf{Jenkins} to grade 400+ students, \textbf{Use of Kubernetes, Docker,
+RabbitMQ, Jenkins, Keycloak, Gitlab}}
+
+\twentyitem{2018\\ 1 y}{Root CRI}{EPITA’s IT Resources Center,
+Paris}{Management of school’s IT infrastructure (500\textasciitilde{} PCs,
+20\textasciitilde{} servers), Development and deployment of services such as a
+Gitlab instance, \textbf{Use of Docker, Ansible, Jenkins, Salt, Gitlab,
+Nftables, DNS, DHCP, iPXE}}
+
+\twentyitem{2017\\ 4 m}{Research \& Development}{BLADE (SHADOW), Paris}{In the Hardware
+research and development team, H264 hardware decoding on Rockchip’s SOC,
+\textbf{Use of C and C++}}
+
+\twentyitem{2016\\ 1 m}{Internship}{EPITA’s Security/System research lab (LSE)
+}{USB interface with UART, SPI, I2C, CAN using an \textbf{STM32}, In charge of
+the SPI communication, development of the Linux kernel module and the firmware
+for the STM32F0, \textbf{Use of C}}
+
+\twentyitem{2014}{3D Printing}{3D Hubs / Make xyz}{3D Modeling, Sale of
+personalized 3D printed objects, Use of Fusion 360, Slic3r}
+
+\end{twenty}
+
+
+\section{Projects}
+
+\begin{twenty}
+
+\twentyitem{2019}{Ansible playbook for Arch linux config}
+{\href{https://github.com/St0rmingBr4in/config_ansible}{bit.ly/configansible}}
+{Automated CI with \textbf{Travis CI} and automatic merge with
+\textbf{Mergify}.}
+
+\twentyitem{2019}{Open-source project tzupdate}
+{\href{https://github.com/cdown/tzupdate/commit/17e51d83ba03eea02a0506d34bede96771d3342a}{bit.ly/tzupdatecontrib}}
+{Contributed by adding automatic time zone change on new network connection.}
+
+\twentyitem{2018}{Docker ACL Registry}{}{Implementation of ACL on docker
+registry without using the Docker premium offer, \textbf{Use of Docker}}
+
+\twentyitem{2018}{3 stage Bootloader x86-64 from real mode}{}{In group of 2, In
+charge of switching from 32bit to 64bit and of the final binary generation,
+\textbf{Use of C and ASM}}
+
+\twentyitem{2018}{Xvisor emulator and associated Mailbox driver}{}{Goal: learn
+how an emulator works, \textbf{Use of C}}
+
+\twentyitem{2016}{42sh}{}{Development of a POSIX shell in C, in group of 3, In
+charge of command evaluation and execution, Modular Testsuite written in
+Python, \textbf{Use of C, Python}}
+
+\end{twenty}
+
+\end{document}
+
+
+
+
+
+
+
+%\documentclass[a4paper]{book}
+
+%\usepackage{graphicx}
+%\usepackage{multicol}
+%\usepackage{listings}
+%\usepackage[utf8]{inputenc}
+%
+%\begin{document}
+%
+%  \chapter{Full time Software Engineer in low level programming starting September 2019}
+%
+%  \section{Formation}
+%
+%  \begin{tabular}
+%    2014/2019 & EPITA Master in Computer Engineering (École Pour l'Informatique et les Techniques Avancées) \\
+%    2016 & Sejong University (), Semester in South Korea \\
+%    2014 & High school diploma in sciences (Baccalauréat Scientifique), Lycée Alain
+%  \end{tabular}
+%
+%
+%  \section{Career Objective}
+%
+%    Graduated from EPITA in 2019, I am a software engineer particularly interested by low level programming.
+%    I am always seeking to learning new skills and creating new things, whether be it something physical or digital.
+%    Particularly curious about new technologies, I own a 3D printer since I am 16, which I highly modified (hardware and software) in order to better suit my needs.
+%  \section{Experience}
+%
+%  \begin{tabular}{cl}
+%    \toprule
+%    2019 & Software engineer intern
+%           %\begin{list}
+%           %  \item Working on Broadcom switching ASICs
+%           %\end{list}\\
+%    2018 & Teaching Assistant (ACU/YAKA 2019)
+%           %\begin{list}
+%           %  \item Pedagogical supervision of EPITA 2020 and 2021 students (~300 students)
+%           %\end{list}\\
+%    \bottomrule
+%  \end{tabular}
+%
+%  \section{Skills}
+%
+%  \begin{tabular}{cc}
+%    \toprule
+%    Programming languages & Sys admin skills \\
+%    \midrule
+%    C & Ansible/Salt \\
+%    \midrule
+%    C++ & Docker \\
+%    \midrule
+%    Python & Kubernetes \\
+%    \bottomrule
+%  \end{tabular}
+%
+%  \section{Languages}
+%
+%  % \begin{list}
+%  %   \item English (TOEIC EPITA : 945)
+%  %     \item 1 month in an American host family
+%  %     \item 6 months in Dublin
+%  %   \item French (Native)
+%  % \end{list}
+%
+%  \section{Hobbies}
+%
+%    Sports
+%    % \begin{list}
+%    %   \item Tennis
+%    %   \item Bouldering
+%    % \end{list}
+%
+%    Travels
+%    % \begin{list}
+%    %   \item USA (5 times)
+%    %   \item Korea (5 months)
+%    %   \item China
+%    %   \item Japan
+%    %   \item Italy
+%    %   \item Great-Britain
+%    %   \item Spain
+%    %   \item Germany
+%    %   \item Ireland
+%    %   \item And many more
+%    % \end{list}
+%
+%    Hobbies
+%    % \begin{list}
+%    %   \item Member of the robotic club Evolutek<<
+%    %   \item 3D Printing
+%    %   \item Arduino/Electronics
+%    % \end{list}
+%
+%\end{document}
