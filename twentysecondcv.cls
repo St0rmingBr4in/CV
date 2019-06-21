@@ -97,7 +97,7 @@
 			
     {
     \begin{center}
-      \Huge\round{\color{gray!15}\cvname}{mainblue}
+      \Huge\round{\color{white}\cvname}{mainblue}
     \end{center}
     }
 
@@ -118,7 +118,7 @@
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=center, draw,rectangle, rounded corners, inner sep=3pt, minimum size=6mm, text height=\f@size, fill=#2,#2,text=white](char){#1};%
+	\tikz[baseline=(char.base)]\node[anchor=center, draw,rectangle, rounded corners, inner sep=3pt, minimum size=6mm, text height=0.7*\f@size, fill=#2,#2,text=white](char){#1};%
 }
 
 \renewcommand{\section}[1]{{\Large\round{#1}{mainblue}}}
